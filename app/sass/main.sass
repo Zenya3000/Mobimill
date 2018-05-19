@@ -1,6 +1,7 @@
 body
 	margin: 0
 	background-color: white
+	font-family: "Open Sans"
 .wrapper-full
 	width: 100%
 	height: 100%
@@ -9,9 +10,9 @@ body
 	margin: 0
 	border: 0
 	.content
-		width: 1054px
+		// max-width: 1024px
 		height: 100%
-		padding: 0 15px 
+		// padding: 0 15px 
 		display: block
 		margin: auto
 		position: relative
@@ -19,21 +20,250 @@ body
 			display: flex
 			position: fixed
 			top: 0
-			height: 177px
-			flex-direction: row
-			justify-content: space-between
-			.content_topbar_leftside
-				padding-top: 25px
-				.logo_header
-					width: 188px
-					height: 50px	
+			left: 0
+			// padding: 0 15px 
+			height: 152px
+			width: 100%
+			padding-top: 25px
+			flex-direction: column
+			background-color: rgba(255,255,255,0.8)
+			.wrapper_header
+				max-width: 1054px
+				width: calc(100% + -30px)
+				display: block
+				margin: auto
+				padding: 0 15px
+				.content_topbar_top
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					.content_topbar_leftside
+						display: flex
+						flex-direction: row
+						align-items: flex-end
+						height: 50px
+						padding-bottom: 25px
+						.logo_header
+							width: 188px
+							height: 50px	
+						.content_topbar_leftside_callback
+							display: flex
+							flex-direction: column
+							justify-content: flex-start
+							align-items: flex-start
+							margin-left: 42px
+							.content_topbar_leftside_callback_text
+								font-size: 14px
+								text-align: left
+								color: black
+							.content_topbar_leftside_callback_number
+								font-size: 16px
+								text-align: left
+								color: #0066b3
+					.content_topbar_rightside
+						display: flex
+						flex-direction: row
+						align-items: flex-end
+						height: 50px
+						.content_topbar_rightside_info
+							display: flex
+							margin-right: 55px
+							span
+								border-bottom: 1px solid #0066b3
+								margin-left: 30px
+								color: #505050
+								font-size: 14px
+								text-align: center
+								padding-bottom: 3px
+								line-height: 1.57
+								font-weight: 600
+								// padding: 5px
+								transition: 300ms ease
+								&:first-child
+									margin-left: 0
+								&:hover
+									cursor: pointer
+									border-bottom: 1px solid #1f9339
+
+						.content_topbar_rightside_lang_search
+							display: flex
+							align-items: flex-end
+							.content_topbar_rightside_lang_search_select
+								position: relative
+								margin-right: 26px
+								.select_lang 
+									border: solid 1px #0066b3
+									font-size: 13px
+									width: 67px
+									height: 30px
+									padding-left: 12px
+									background: white
+									appearance: none
+									-moz-appearance: none
+									-webkit-appearance: none
+									text-align: center
+									&:focus 
+										outline: none
+										box-shadow: none
+										border: solid 1px grey
+									option
+										height: 30px
+
+								.select-side
+									position: absolute
+									top: 1px
+									right: 8px
+							.dash_search
+								width: 35px
+								height: 30px
+								background: white
+								border: 1px solid grey
+								position: relative
+								transition: 300ms ease
+								overflow: hidden
+								&:hover
+									cursor: pointer	
+									width: 200px
+								.dash_search_input
+									height: 30px
+									width: calc(100% + -40px)
+									padding-left: 5px
+									line-height: 30px
+									font-size: 14px
+									margin: 0
+									padding-top: 0
+									border: none
+									overflow: hidden
+									position: absolute
+									right: 35px
+									left: 0
+								.search
+									position: absolute
+									right: 0
+									top: 0
+									width: 35px
+									height: 30px
+									background: none
+									border: 0
+									z-index: 123123
+									background-color: #0066b3
+									&:hover
+										cursor: pointer
+									.search_icon
+										line-height: 30px
+										width: 15px
+										height: 30px
+				.main_navigation_content_topbar
+					height: 77px
+					width: 100%
+					display: flex
+					flex-direction: row
+					text-align: center
+					.navbar
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						width: 100%
+						> *
+							width: calc(100% / 7)
 	.main-content
 		height: 500px
-		width: 1054px
+		// width: 1024px
 		padding: 0 15px 
 		display: block
 		margin: auto
-		background: pink
+		background: grey
 
 
-		
+.chosen-container-single .chosen-single
+	border-radius: 0!important
+	background: white!important
+	box-shadow: none!important
+	height: 30px!important
+	line-height: 30px!important
+	border: 1px solid #0066b3
+.chosen-container-single .chosen-single div b
+	background: url(../libs/chosen/chosen-sprite.png) no-repeat 0 6px
+
+.navbar 
+  overflow: hidden
+  background-color: #ffffff
+
+
+/* Links inside the navbar */
+.navbar a 
+	float: left
+	font-size: 16px
+	color: black
+	text-align: center
+	// padding: 14px 16px
+	text-decoration: none
+	height: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	transition: 222ms ease
+
+
+/* The dropdown container */
+.dropdown 
+	float: left
+	overflow: hidden
+	height: 100%
+	transition: 222ms ease
+
+
+/* Dropdown button */
+.dropdown .dropbtn 
+	font-size: 16px
+	border: none
+	outline: none
+	color: black
+	// padding: 14px 16px
+	background-color: inherit
+	font-family: inherit
+	margin: 0 
+	width: 100%
+	height: 100%
+	transition: 222ms ease
+	&:hover
+		cursor: pointer
+
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn 
+	background-color: #cce0ef
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content 
+	display: none
+	position: absolute
+	background-color: white
+	min-width: 160px
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+	z-index: 1
+	transition: 222ms ease
+
+/* Links inside the dropdown */
+.dropdown-content a 
+	float: none
+	color: black
+	padding: 12px 16px
+	text-decoration: none
+	display: block
+	text-align: left
+	transition: 222ms ease
+
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover 
+	background-color: #cce0ef
+	transition: 222ms ease
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content 
+	display: block
+	transition: 222ms ease

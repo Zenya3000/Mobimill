@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="libs/chosen/chosen.min.css">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -11,10 +13,63 @@
 		<div class="wrapper-full">
 			<div class="content">
 				<div class="content_topbar">
-					<div class="content_topbar_leftside">
-						<img src="img/logo-header.svg" class="logo_header" alt="">
+					<div class="wrapper_header">
+						<div class="content_topbar_top">
+							<div class="content_topbar_leftside">
+								<img src="img/logo-header.svg" class="logo_header" alt="">
+								<div class="content_topbar_leftside_callback">
+									<span class="content_topbar_leftside_callback_text">безкоштовно</span>
+									<span class="content_topbar_leftside_callback_number">0-800-3000-97</span>
+								</div>
+							</div>
+							<div class="content_topbar_rightside">
+								<div class="content_topbar_rightside_info">
+									<span>Корисна інформація</span>
+									<span>Фінансові рішення</span>
+								</div>
+								<div class="content_topbar_rightside_lang_search">
+									<div class="content_topbar_rightside_lang_search_select">
+										<div class="select-side">
+											<img src="img/drop-arrow.svg" class="arrow_drop_select" alt="">
+										</div>
+										<select class="select_lang chosen-select" data-placeholder="Select Your Options">
+											<option value="UKR">UKR</option>
+											<option value="EN">EN</option>
+											<option value="GER">GER</option>
+										</select>
+									</div>
+									<div class="dash_search">
+										<input type="text" class="dash_search_input">
+										<button class="search">
+											<img src="img/ic-search.svg" class="search_icon" alt="">
+										</button>
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class="main_navigation_content_topbar">
+							<div class="navbar">
+								<a href="#about">Про Компанию</a>
+								
+								<div class="dropdown">
+									<button class="dropbtn">Продукты 
+									<i class="fa fa-caret-down"></i>
+									</button>
+									<div class="dropdown-content">
+									<a href="#">Link 1</a>
+									<a href="#">Link 2</a>
+									<a href="#">Link 3</a>
+									</div>
+								</div> 
+								<a href="#scheme">Схеми закисту рослин</a>
+								<a href="#seeds">Насіння</a>
+								<a href="#lab">Лабораторія Plant Clinic</a>
+								<a href="#prod">Виробництво</a>
+								<a href="#news">Новини</a>
+								<a href="#contacts">Контакти</a>
+							</div>
+						</div>
 					</div>
-					<div class="content_topbar_rightside">2</div>
 				</div>
 			</div>
 			<div class="main-content">12
@@ -23,6 +78,10 @@
 		</div>	
 	
 	<script src="js/libs.min.js"></script>
+	<script src="https://use.fontawesome.com/895156e50d.js"></script>
+	<script src="libs/chosen/chosen.jquery.min.js"></script>
+	<script src="js/common.js"></script>
+	
 
 </body>
 </html>
