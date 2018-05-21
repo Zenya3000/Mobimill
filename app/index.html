@@ -3,11 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="libs/chosen/chosen.min.css">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	<!-- <link rel="stylesheet" href="libs/slider/styles.css"> -->
+	<link rel="stylesheet" href="libs/wow/animate.css">
 	<link rel="stylesheet" href="libs/slider/prrple.slider.css">
 </head>
 <body>
@@ -46,6 +48,13 @@
 											<img src="img/ic-search.svg" class="search_icon" alt="">
 										</button>
 									</div>	
+									<div class="mobile">
+										<div class="burger">
+											<span class="line one"></span>
+											<span class="line two"></span>
+											<span class="line three"></span>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -70,7 +79,74 @@
 								<a href="#news">Новини</a>
 								<a href="#contacts">Контакти</a>
 							</div>
+							<div class="mob_menu">
+								<nav>
+									<ul>
+										<li>
+										<a href='#about'>
+											<!-- <div class='fa fa-user'></div> -->
+											Про Компанию
+										</a>
+										</li>
+										<li class='sub-menu'>
+										<a href='#settings'>
+											<!-- <div class='fa fa-gear'></div> -->
+											Продукты
+											<div class='fa fa-caret-down right'></div>
+										</a>
+										<ul>
+											<li>
+											
+												<a href="#">Link 1</a>
+											
+											</li>
+											<li>
+												
+												<a href="#">Link 1</a>
+												
+											</li>
+											<li>
+												
+												<a href="#">Link 1</a>
+												
+											</li>
+										</ul>
+										</li>
+										<li class='sub-menu'>
+										<a href='#scheme'>
+											Схеми закисту рослин
+										</a>
+										</li>
+										<li class='sub-menu'>
+											<a href='#seeds'>
+													Насіння
+											</a>
+										</li>				
+										<li class='sub-menu'>
+											<a href='#lab'>
+												Лабораторія Plant Clinic
+											</a>
+										</li>
+										<li class='sub-menu'>
+											<a href='#prod'>
+												Виробництво
+											</a>
+										</li>
+										<li class='sub-menu'>
+											<a href='#news'>
+												Новини
+											</a>
+										</li>				
+										<li class='sub-menu'>
+											<a href='#contacts'>
+												Контакты
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>
@@ -81,22 +157,26 @@
 							<div class="slides">
 								<div class="slide">
 									<div class="slidetitle">
-										<img src="img/field1.jpg" alt="">
+										<!-- <img src="img/field1.jpg" alt=""> -->
+										<div class="slide1z field"></div>
 									</div>
 								</div>
 								<div class="slide">
 									<div class="slidetitle">
-										<img src="img/field2.jpg" alt="">
+										<!-- <img src="img/field2.jpg" alt=""> -->
+										<div class="slide2z field"></div>
 									</div>
 								</div>
 								<div class="slide">
 									<div class="slidetitle">
-										<img src="img/field3.jpg" alt="">
+										<!-- <img src="img/field3.jpg" alt=""> -->
+										<div class="slide3z field"></div>
 									</div>
 								</div>
 								<div class="slide">
 									<div class="slidetitle">
-										<img src="img/field4.jpg" alt="">
+										<!-- <img src="img/field4.jpg" alt=""> -->
+										<div class="slide4z field"></div>
 									</div>
 								</div>
 							</div>
@@ -105,7 +185,129 @@
 						<a class="slider_right"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
+				<div class="section-products">
+					<div class="section-products_item fadeInUp wow">
+						<img src="img/ic-elements.svg" class="section-products_image" alt="">
+						<span class="section-products_text">Мікроєлементи</span>
+					</div>
+					<div class="section-products_item fadeInUp wow">
+						<img src="img/ic-microfertilizers-kharkov.svg" class="section-products_image" alt="">
+						<span class="section-products_text">Мікродобрива Peters & Burg Kft</span>
+					</div>
+					<div class="section-products_item fadeInUp wow">
+						<img src="img/ic-microfertilizers-peters.svg" class="section-products_image" alt="">
+						<span class="section-products_text">Мікродобрива ТОВ "Харків Хімпром"</span>
+					</div>
+				</div>
+				<div class="main-section-seeds">
+					<div class="section-seeds">
+						<div class="section-seeds_leftside">
+							<span class="section-seeds_leftside_name fadeInLeft wow">НАСІННЯ</span>
+							<span class="section-seeds_leftside_text">
+								<p>У 2010 році компанія <strong>«Нертус»</strong> відкрила новий напрямок діяльності: виробництво насіння високоврожайних гібридів соняшнику і кукурудзи сербської селекції.</p>
+								<!-- <br> -->
+								<p>В рамках цього проекту було засновано аграрну компанію «Нертус Агро» і введений в експлуатацію великий насіннєвий завод, спроектований і побудований фахівцями німецького концерну PETKUS Technology GmbH.</p>
+							</span>
+							<a href="#" class="section-seeds_leftside_link">Детальніше</a>
+						</div>
+						<div class="section-seeds_rightside">
+								<div class="section-seeds_rightside_image">
+									<img src="img/sunflowers.jpg" alt="" class="seeds_rightside_image_sunflower">
+									<img src="img/ic-seeds.svg" alt="" class="seeds_rightside_image_seeds">
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-section_33p">
+					<div class="section-33p">
+						<span class="section-33p_name fadeInLeft wow">33P</span>
+						<div class="section-33p_content">
+							<div class="section-33p_item fadeInUp wow">
+								<img src="img/ic-ukraine.svg" class="section-33p_image" alt="">
+								<span class="section-33p_text">Україна</span>
+							</div>
+							<div class="section-33p_item fadeInUp wow">
+								<img src="img/ic-moldova.jpg" class="section-33p_image" alt="">
+								<span class="section-33p_text">Молдова</span>
+							</div>
+							<div class="section-33p_item fadeInUp wow">
+								<img src="img/ic-belarus.jpg" class="section-33p_image" alt="">
+								<span class="section-33p_text">Білорусь</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-section-news">
+					<div class="section-news">
+						<span class="section-news_name fadeInLeft wow">НОВИНИ</span>
+						<div class="section-news_content">
+							<div class="section-news_item fadeInUp wow">
+								<img src="img/nature1.jpg" class="section-news_image" alt="">
+								<span class="section-news_text">Опубліковано новий Каталог засобів захисту рослин НЕРТУС</span>
+								<span class="section-news_date">16.07.18</span>
+							</div>
+							<div class="section-news_item fadeInUp wow">
+								<img src="img/nature2.png" class="section-news_image" alt="">
+								<span class="section-news_text">Опубліковано новий Каталог засобів захисту рослин НЕРТУС</span>
+								<span class="section-news_date">16.07.18</span>
+							</div>
+							<div class="section-news_item fadeInUp wow">
+								<img src="img/nature3.jpg" class="section-news_image" alt="">
+								<div class="section-news_text">Опубліковано новий Каталог засобів захисту рослин НЕРТУС</div>
+								<span class="section-news_date">16.07.18</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer">
+					<div class="footer_wrapper">
+						<div class="footer_menu">
+							<div class="footer_menu_title">
+								Про Компанію
+							</div>
+							<a href="#" class="footer_menu_item">Корисна інформація</a>
+							<a href="#" class="footer_menu_item">Фінансові рішення</a>
+							<a href="#" class="footer_menu_item">Лабораторія Plant Clinic</a>
+							<a href="#" class="footer_menu_item">Новини</a>
+							<a href="#" class="footer_menu_item">Контакти</a>							
+						</div>
+						<div class="footer_prod">
+							<div class="footer_prod_title">
+								Продукція
+							</div>
+							<a href="#" class="footer_prod_item">ЗЗР</a>
+							<a href="#" class="footer_prod_item">Мікродобрива</a>
+							<a href="#" class="footer_prod_item">Схеми захисту рослин</a>
+							<a href="#" class="footer_prod_item">Насіння</a>
+							<a href="#" class="footer_prod_item">Виробництво</a>
+						</div>
+						<div class="footer_faq">
+							<div class="footer_faq_title">
+								Часто задаваемые вопросы
+							</div>
+							<div class="footer_faq_callback">
+								<span class="footer_faq_callback_title">безкоштовно</span>
+								<a href="tel: +0-800-3000-97"class="footer_faq_callback_number">0-800-3000-97</a>
+							</div>
+						</div>
+						<div class="footer_sotial">
+							<div class="footer_sotial_title">
+								<a href="#"><img src="img/ic-facebook.svg" alt="" class="icon"></a>
+								<a href="#"><img src="img/ic-youtube.svg" alt=""  class="icon"></a>
+							</div>
+							<div class="footer_sotial_app">
+								<a href="#"><img src="img/btn-app-store.svg" alt=""></a>
+								<a href="#"><img src="img/btn-google-play.svg" alt=""></a>	
+							</div>
+						</div>
+
+					</div>
+					<div class="footer_rights">
+						<p>Всі матеріали можуть бути скопійовані тільки за згодою адміністрації сайту / його власника, або із прямим посиланням на сайт.</p>
+					</div>
+				</div>
 			</div>
+		
 		</div>	
 	
 	<script src="js/libs.min.js"></script>
@@ -114,6 +316,8 @@
 	<script src="libs/chosen/chosen.jquery.min.js"></script>
 	<script src="libs/slider/jquery.touchSwipe.1.6.min.js"></script>
 	<script src="libs/slider/scripts.js"></script>
+	<script src="libs/wow/wow.min.js"></script>
+	<script>new WOW().init();</script>
 	<script src="libs/slider/prrple.slider.js"></script>
 
 	<script src="js/common.js"></script>

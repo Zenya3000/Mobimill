@@ -5,7 +5,7 @@
 html{
 	height:100%;
 }
-body{
+/* body{
 	position:relative;
 	min-height:100%;
 	padding:0 20px 260px;
@@ -15,7 +15,7 @@ body{
 	line-height:19px;
 	font-weight:lighter;
 	color:#333;
-}
+} */
 * {
 	margin: 0;
 	padding: 0;
@@ -133,7 +133,7 @@ table{
 
 .btn,
 .btn:hover{
-	display:inline-block;
+	/* display:inline-block;
 	position:relative;
 	padding:7px 20px 7px;
 	border-radius:4px;
@@ -143,11 +143,11 @@ table{
 	color:#FFF;
 	text-decoration:none;
 	text-transform:uppercase;
-	cursor:pointer;
+	cursor:pointer; */
 	
-	transition: background-color .2s ease-in-out, color .2s ease-in-out, border-color .2s ease-in-out;
+	/* transition: background-color .2s ease-in-out, color .2s ease-in-out, border-color .2s ease-in-out;
 	-moz-transition: background-color .2s ease-in-out, color .2s ease-in-out, border-color .2s ease-in-out;
-	-webkit-transition: background-color .2s ease-in-out, color .2s ease-in-out, border-color .2s ease-in-out;
+	-webkit-transition: background-color .2s ease-in-out, color .2s ease-in-out, border-color .2s ease-in-out; */
 }
 .btn:hover{
 	background:#067199;
@@ -174,7 +174,7 @@ input[type="button"], input[type="submit"], input[type="reset"]{
 
 
 /********** HEADER **********/
-#header{
+/* #header{
 	position:relative;
 	height:115px;
 	margin:0 auto 38px;
@@ -242,7 +242,7 @@ input[type="button"], input[type="submit"], input[type="reset"]{
 	bottom:-55px;
 	right:0;
 	z-index:10;
-}
+} */
 
 @media (max-width:413px){
 	#header,
@@ -268,7 +268,7 @@ input[type="button"], input[type="submit"], input[type="reset"]{
 
 
 /********** FOOTER **********/
-#footer{
+/* #footer{
 	display:block;
 	position:absolute;
 	width:100%;
@@ -350,18 +350,18 @@ input[type="button"], input[type="submit"], input[type="reset"]{
 }
 #footer_notes a:hover{
 	text-decoration:underline;
-}
+} */
 
 
 
 /********** CONTENT **********/
-#content{
+/* #content{
 	display:block;
 	position:relative;
 	max-width:940px;
 	margin:0 auto;
-}
-.container{
+} */
+/* .container{
 	position:relative;
 	width:auto;
 	margin:0 auto;
@@ -370,7 +370,7 @@ input[type="button"], input[type="submit"], input[type="reset"]{
 .container+.container{
 	padding-top:38px;
 	border-top:1px solid #E9E9E9;
-}
+} */
 
 
 

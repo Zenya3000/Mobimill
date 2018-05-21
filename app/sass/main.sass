@@ -2,179 +2,15 @@ body
 	margin: 0
 	background-color: white
 	font-family: "Open Sans"
-.wrapper-full
-	width: 100%
-	height: 100%
-	display: block
-	padding: 0
-	margin: 0
-	border: 0
-	.content
-		// max-width: 1024px
-		height: 100%
-		// padding: 0 15px 
-		display: block
-		margin: auto
-		position: relative
-		.content_topbar
-			display: flex
-			position: fixed
-			top: 0
-			left: 0
-			// padding: 0 15px 
-			height: 152px
-			width: 100%
-			padding-top: 25px
-			z-index: 100000
-			flex-direction: column
-			background-color: rgba(255,255,255,0.8)
-			.wrapper_header
-				max-width: 1054px
-				width: calc(100% + -30px)
-				display: block
-				margin: auto
-				padding: 0 15px
-				.content_topbar_top
-					display: flex
-					flex-direction: row
-					justify-content: space-between
-					.content_topbar_leftside
-						display: flex
-						flex-direction: row
-						align-items: flex-end
-						height: 50px
-						padding-bottom: 25px
-						.logo_header
-							width: 188px
-							height: 50px	
-						.content_topbar_leftside_callback
-							display: flex
-							flex-direction: column
-							justify-content: flex-start
-							align-items: flex-start
-							margin-left: 42px
-							.content_topbar_leftside_callback_text
-								font-size: 14px
-								text-align: left
-								color: black
-							.content_topbar_leftside_callback_number
-								font-size: 16px
-								text-align: left
-								color: #0066b3
-					.content_topbar_rightside
-						display: flex
-						flex-direction: row
-						align-items: flex-end
-						height: 50px
-						.content_topbar_rightside_info
-							display: flex
-							margin-right: 55px
-							span
-								border-bottom: 1px solid #0066b3
-								margin-left: 30px
-								color: #505050
-								font-size: 14px
-								text-align: center
-								padding-bottom: 3px
-								line-height: 1.57
-								font-weight: 600
-								// padding: 5px
-								transition: 300ms ease
-								&:first-child
-									margin-left: 0
-								&:hover
-									cursor: pointer
-									border-bottom: 1px solid #1f9339
 
-						.content_topbar_rightside_lang_search
-							display: flex
-							align-items: flex-end
-							.content_topbar_rightside_lang_search_select
-								position: relative
-								margin-right: 26px
-								.select_lang 
-									border: solid 1px #0066b3
-									font-size: 13px
-									width: 67px
-									height: 30px
-									padding-left: 12px
-									background: white
-									appearance: none
-									-moz-appearance: none
-									-webkit-appearance: none
-									text-align: center
-									&:focus 
-										outline: none
-										box-shadow: none
-										border: solid 1px grey
-									option
-										height: 30px
-
-								.select-side
-									position: absolute
-									top: 1px
-									right: 8px
-							.dash_search
-								width: 35px
-								height: 30px
-								background: white
-								border: 1px solid grey
-								position: relative
-								transition: 300ms ease
-								overflow: hidden
-								&:hover
-									cursor: pointer	
-									width: 200px
-								.dash_search_input
-									height: 30px
-									width: calc(100% + -40px)
-									padding-left: 5px
-									line-height: 30px
-									font-size: 14px
-									margin: 0
-									padding-top: 0
-									border: none
-									overflow: hidden
-									position: absolute
-									right: 35px
-									left: 0
-								.search
-									position: absolute
-									right: 0
-									top: 0
-									width: 35px
-									height: 30px
-									background: none
-									border: 0
-									z-index: 123123
-									background-color: #0066b3
-									&:hover
-										cursor: pointer
-									.search_icon
-										line-height: 30px
-										width: 15px
-										height: 30px
-				.main_navigation_content_topbar
-					height: 77px
-					width: 100%
-					display: flex
-					flex-direction: row
-					text-align: center
-					.navbar
-						display: flex
-						flex-direction: row
-						justify-content: center
-						align-items: center
-						width: 100%
-						> *
-							width: calc(100% / 7)
-	.main-content
-		height: 500px
-		// width: 1024px
-		// padding: 0 15px 
-		display: block
-		margin: auto
-		background: grey
+.main-content
+	height: auto
+	// width: 1024px
+	// padding: 0 15px 
+	display: flex
+	flex-direction: column
+	margin: auto
+	background: white
 
 
 .chosen-container-single .chosen-single
@@ -190,6 +26,7 @@ body
 .navbar 
   overflow: hidden
   background-color: #ffffff
+
 
 
 /* Links inside the navbar */
@@ -274,6 +111,1450 @@ body
 	display: block
 	transition: 222ms ease
 
-.slidetitle
-	img
+
+
+nav ul
+  list-style: none
+  margin: 0
+  padding: 0
+  li
+    a
+      display: block
+      background: #3498db
+      padding: 10px 15px
+      color: #fff
+      text-decoration: none
+      -webkit-transition: 0.2s linear
+      -moz-transition: 0.2s linear
+      -ms-transition: 0.2s linear
+      -o-transition: 0.2s linear
+      transition: 0.2s linear
+      &:hover
+        background: #2980b9
+      .fa
+        width: 16px
+        text-align: center
+        margin-right: 5px
+      .badge
+        display: inline-block
+        background: #fff
+        // background: rgba(255, 255, 255, 0.2)
+        padding: 3px 7px
+        color: #fff
+        font-size: 12px
+        font-weight: 800
+    ul li a
+      background: #444
+      border-left: 4px solid transparent
+      padding: 10px 20px
+      &:hover
+        background: #333
+        border-left: 4px solid #3498db
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 320px)
+	.slidetitle
+		img
+			width: auto
+	.content
+		padding-top: 70px
+	.wrapper-full
 		width: 100%
+		height: 100%
+		display: block
+		padding: 0
+		margin: 0
+		border: 0
+		.content
+			// max-width: 1024px
+			height: 100%
+			// padding: 0 15px 
+			display: block
+			margin: auto
+			position: relative
+			.content_topbar
+				display: flex
+				position: fixed
+				top: 0
+				left: 0
+				// padding: 0 15px 
+				height: auto
+				width: 100%
+				padding-top: 10px
+				z-index: 100000
+				flex-direction: column
+				background-color: rgba(255,255,255,0.8)
+				.wrapper_header
+					max-width: 1054px
+					width: calc(100% + -30px)
+					display: block
+					margin: auto
+					padding: 0 15px
+					.content_topbar_top
+						display: flex
+						flex-direction: row
+						justify-content: space-between
+						.content_topbar_leftside
+							display: flex
+							flex-direction: row
+							align-items: flex-end
+							height: 50px
+							padding-bottom: 10px
+							.logo_header
+								width: 188px
+								height: 50px	
+							.content_topbar_leftside_callback
+								display: none
+								flex-direction: column
+								justify-content: flex-start
+								align-items: flex-start
+								margin-left: 42px
+								.content_topbar_leftside_callback_text
+									font-size: 14px
+									text-align: left
+									color: black
+								.content_topbar_leftside_callback_number
+									font-size: 16px
+									text-align: left
+									color: #0066b3
+						.content_topbar_rightside
+							display: flex
+							flex-direction: row
+							align-items: flex-end
+							height: 50px
+							.content_topbar_rightside_info
+								display: none
+								margin-right: 55px
+								span
+									border-bottom: 1px solid #0066b3
+									margin-left: 30px
+									color: #505050
+									font-size: 14px
+									text-align: center
+									padding-bottom: 3px
+									line-height: 1.57
+									font-weight: 600
+									// padding: 5px
+									transition: 300ms ease
+									&:first-child
+										margin-left: 0
+									&:hover
+										cursor: pointer
+										border-bottom: 1px solid #1f9339
+
+							.content_topbar_rightside_lang_search
+								display: flex
+								align-items: flex-end
+								.content_topbar_rightside_lang_search_select
+									position: relative
+									margin-right: 26px
+									display: none
+									.select_lang 
+										border: solid 1px #0066b3
+										font-size: 13px
+										width: 67px
+										height: 30px
+										padding-left: 12px
+										background: white
+										appearance: none
+										-moz-appearance: none
+										-webkit-appearance: none
+										text-align: center
+										&:focus 
+											outline: none
+											box-shadow: none
+											border: solid 1px grey
+										option
+											height: 30px
+
+									.select-side
+										position: absolute
+										top: 1px
+										right: 8px
+								.dash_search
+									width: 35px
+									height: 30px
+									background: white
+									border: 1px solid grey
+									position: relative
+									transition: 300ms ease
+									overflow: hidden
+									display: none
+									&:hover
+										cursor: pointer	
+										width: 200px
+									.dash_search_input
+										height: 30px
+										width: calc(100% + -40px)
+										padding-left: 5px
+										line-height: 30px
+										font-size: 14px
+										margin: 0
+										padding-top: 0
+										border: none
+										overflow: hidden
+										position: absolute
+										right: 35px
+										left: 0
+									.search
+										position: absolute
+										right: 0
+										top: 0
+										width: 35px
+										height: 30px
+										background: none
+										border: 0
+										z-index: 123123
+										background-color: #0066b3
+										&:hover
+											cursor: pointer
+										.search_icon
+											line-height: 30px
+											width: 15px
+											height: 30px
+					.main_navigation_content_topbar
+						height: auto
+						width: 100%
+						display: flex
+						flex-direction: row
+						text-align: center
+						.navbar
+							display: none
+							flex-direction: row
+							justify-content: center
+							align-items: center
+							width: 100%
+							> *
+								width: calc(100% / 7)
+	.burger
+		height: auto
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		align-items: flex-end
+		transition: 300ms ease
+		opacity: 1
+		&:hover
+			cursor: pointer
+
+		.line
+			height: 3px
+			width: 30px
+			font-weight: 700
+			color: black
+			background-color: black
+			margin-bottom: 5px
+			transition: 300ms ease
+			&.one
+				position: relative
+			&.two
+				position: relative
+			&.three
+				position: relative
+	.mob_menu
+		display: none
+		width: 100%
+		a
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-direction: row
+	.slider 
+		display: none
+
+	.section-products
+		display: flex
+		order: 1
+		padding-bottom: 10px
+		padding-top: 10px
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		.section-products_item
+			width: 160px
+			height: 160px
+			padding: 15px
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			flex-direction: column
+			margin: 10px
+			background-color: #ffffff
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+			.section-products_image
+				margin-bottom: 15px
+			.section-products_text
+				text-align: center
+				display: block
+				width: 100%
+
+	.main-section-seeds
+		background-color: #fafafa
+		height: auto
+		width: calc(100% + -30px)
+		display: flex
+		order: 0
+		margin-top: 61px
+		margin-bottom: 31px		
+		padding: 0 15px	
+		.section-seeds
+			display: flex
+			flex-direction: row
+			max-width: 1024px
+			width: 100%
+			margin: auto
+
+			height: auto
+			justify-content: space-between
+			position: relative
+			padding-bottom: 20px
+			.section-seeds_leftside
+				width: 100%
+				padding-right: 0px
+				.section-seeds_leftside_text
+					display: flex
+					flex-direction: column
+					font-size: 16px
+					font-weight: normal
+					font-style: normal
+					font-stretch: normal
+					line-height: 1.5
+					letter-spacing: normal
+					text-align: left
+					color: #505050
+					padding-bottom: 10px
+				.section-seeds_leftside_name
+					width: 261px
+					height: 60px
+					background-color: #e6e6e6
+					display: flex
+					align-items: center
+					font-size: 20px
+					font-weight: bold
+					padding-left: 30px
+					font-style: normal
+					font-stretch: normal
+					line-height: normal
+					letter-spacing: normal
+					text-align: center
+					color: #a1a1a1
+					position: relative
+					top: -31px
+				.section-seeds_leftside_link
+					width: 173px
+					height: 40px
+					background-color: #0066b3
+					font-size: 14px
+					font-weight: 400
+					display: flex
+					justify-content: center
+					align-items: center
+					text-decoration: none
+
+					font-style: normal
+					font-stretch: normal
+					line-height: normal
+					letter-spacing: normal
+					text-align: center
+					color: #ffffff
+					transition: 300ms ease
+					&:hover
+						background: #48a4ff
+						cursor: pointer
+			.section-seeds_rightside
+				display: none
+				.section-seeds_rightside_image
+					position: relative
+					top: -31px
+					.seeds_rightside_image_sunflower
+					.seeds_rightside_image_seeds
+						position: absolute
+						left: -70px
+						bottom: -70px
+	.main-section_33p
+			height: auto
+			width: calc(100% + -30px)
+			display: flex
+			order: 4
+			margin-top: 31px
+			margin-bottom: 31px
+			padding: 0 15px
+			.section-33p
+				position: relative
+				display: flex
+				flex-direction: column
+				height: auto
+				width: 100%
+				max-width: 1024px
+				margin: 30px auto
+				.section-33p_name
+					width: 261px
+					height: 60px
+					background-color: #e6e6e6
+					display: flex
+					align-items: center
+					font-size: 20px
+					font-weight: bold
+					padding-left: 30px
+					font-style: normal
+					font-stretch: normal
+					line-height: normal
+					letter-spacing: normal
+					text-align: center
+					color: #a1a1a1
+					position: relative
+					top: -31px
+				.section-33p_content
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+					.section-33p_item
+						width: 160px
+						height: 160px
+						padding: 15px
+						display: flex
+						justify-content: flex-start
+						align-items: center
+						flex-direction: column
+						margin: 10px
+						background-color: #ffffff
+						box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+						.section-33p_image
+							margin-bottom: 15px
+						.section-33p_text
+							text-align: center
+							display: block
+							width: 100%
+	.main-section-news
+		background-color: #fafafa
+		height: auto
+		width: 100%
+		display: flex
+		order: 4
+		margin-top: 31px
+		margin-bottom: 21px
+		.section-news
+			display: flex
+			flex-direction: column
+			max-width: 1024px
+			width: 100%
+			margin: auto
+			height: auto
+			// justify-content: space-between
+			position: relative
+			padding-bottom: 0px
+			padding-top: 73px
+			.section-news_name
+				width: 261px
+				height: 60px
+				background-color: #e6e6e6
+				display: flex
+				align-items: center
+				font-size: 20px
+				font-weight: bold
+				padding-left: 30px
+				font-style: normal
+				font-stretch: normal
+				line-height: normal
+				letter-spacing: normal
+				text-align: center
+				color: #a1a1a1
+				position: absolute
+				top: -31px
+			.section-news_content
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				.section-news_item
+					width: 328px
+					height: 388px
+					margin-right: 0px
+					display: flex
+					flex-direction: column
+					position: relative
+					transition: 300ms ease
+					margin-bottom: 20px
+					&:last-child
+						margin-right: 0
+					&:hover
+						cursor: pointer
+						transform: scale(1.05)
+					.section-news_image
+						width: 100%
+						height: 280px
+					.section-news_text
+						// width: 100%
+						height: 108px
+						display: flex
+						justify-content: flex-start
+						align-items: center
+						background: #cce0ef
+						font-size: 20px
+						font-weight: 600
+						font-style: normal
+						font-stretch: normal
+						line-height: normal
+						letter-spacing: normal
+						text-align: left
+						color: #505050
+						padding: 11px
+						padding-left: 20px
+					.section-news_date
+						position: absolute
+						left: 10px
+						bottom: 98px
+						width: 88px
+						height: 20px
+						display: flex
+						justify-content: center
+						align-items: center
+						font-size: 12px
+						color: #ffffff
+						text-align: center
+						background: #0066b3
+	.footer
+		width: 100%
+		border-top: 1px solid #0066b3
+		display: flex
+		order: 6
+		margin-top: 20px
+		flex-direction: column
+		.footer_wrapper
+			max-width: 1024px
+			padding: 0 15px
+			width: calc(100% + -30px)
+			height: auto
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			margin: 14px auto 10px auto
+			// flex-direction: column
+			.footer_menu
+				display: flex
+				flex-direction: column
+				justify-content: flex-start
+				align-items: flex-start
+				font-size: 12px
+				margin-bottom: 15px
+				.footer_menu_title
+					font-weight: bold
+					color: #4a4a4a
+					line-height: 1.67
+				.footer_menu_item
+					color: #6c6c6c
+					font-weight: normal
+					line-height: 1.67
+					text-align: left
+					text-decoration: none
+			.footer_prod
+				display: flex
+				flex-direction: column
+				justify-content: flex-start
+				align-items: flex-start
+				font-size: 12px
+				margin-bottom: 15px
+				.footer_prod_title
+					font-weight: bold
+					color: #4a4a4a
+					line-height: 1.67
+				.footer_prod_item
+					color: #6c6c6c
+					font-weight: normal
+					line-height: 1.67
+					text-align: left
+					text-decoration: none
+			.footer_faq
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				align-items: flex-start
+				font-size: 12px
+				margin-bottom: 15px
+				.footer_faq_title
+					font-weight: bold
+					color: #4a4a4a
+					line-height: 1.67
+				.footer_faq_callback
+					display: flex
+					flex-direction: column
+					.footer_faq_callback_title
+						font-weight: normal
+						color: black
+					.footer_faq_callback_number
+						color: #0066b3
+						text-decoration: none
+						color: #0066b3
+						&:hover
+							cursor: pointer
+			.footer_sotial
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				align-items: flex-start
+				margin-bottom: 0px
+				.footer_sotial_title
+					margin-bottom: 15px
+					& a
+					margin-right: 13px
+					transition: 200ms ease
+					
+					&:last-child
+						margin-right: 0
+					&:hover
+						cursor: pointer
+				.footer_sotial_app
+					display: flex
+					flex-direction: column
+					&:hover
+						cursor: pointer
+		.footer_rights
+			max-width: 1024px
+			padding: 0 15px
+			width: calc(100% + -30px)
+			height: auto
+			display: flex
+			justify-content: space-between
+			margin: 5px auto 20px auto
+			font-size: 12px
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 768px)
+	.field
+		background-size: cover
+		height: 643px
+		background-repeat: no-repeat
+		background-position: center center
+
+	.slide1z
+		background-image: url("../img/field1.jpg")
+	.slide2z
+		background-image: url("../img/field2.jpg")
+	.slide3z
+		background-image: url("../img/field3.jpg")
+	.slide4z
+		background-image: url("../img/field4.jpg")
+	.slidetitle
+		img
+			width: auto
+	.content
+		padding-top: 0
+	.content_topbar_rightside_info
+		display: none
+	.main_navigation_content_topbar
+		height: 77px
+		width: 100%
+		display: flex
+		flex-direction: row
+		text-align: center
+		.navbar
+			display: none
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			width: 100%
+			> *
+				width: calc(100% / 7)
+	.mob_menu
+		display: none
+	.slider 
+		display: block
+	.section-products
+		display: flex
+		padding-bottom: 10px
+		padding-top: 10px
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		.section-products_item
+			width: 160px
+			height: 160px
+			padding: 15px
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			flex-direction: column
+			margin: 10px
+			background-color: #ffffff
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+			.section-products_image
+				margin-bottom: 20px
+			.section-products_text
+				text-align: center
+				display: block
+				width: 100%
+				
+	.main-section_33p
+			height: auto
+			width: calc(100% + -30px)
+			display: flex
+			order: 4
+			margin-top: 31px
+			margin-bottom: 31px
+			padding: 0 15px
+			.section-33p
+				position: relative
+				display: flex
+				flex-direction: column
+				height: auto
+				width: 100%
+				max-width: 1024px
+				margin: 30px auto
+				.section-33p_name
+					width: 261px
+					height: 60px
+					background-color: #e6e6e6
+					display: flex
+					align-items: center
+					font-size: 20px
+					font-weight: bold
+					padding-left: 30px
+					font-style: normal
+					font-stretch: normal
+					line-height: normal
+					letter-spacing: normal
+					text-align: center
+					color: #a1a1a1
+					position: relative
+					top: -31px
+				.section-33p_content
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					.section-33p_item
+						width: 160px
+						height: 160px
+						padding: 15px
+						display: flex
+						justify-content: flex-start
+						align-items: center
+						flex-direction: column
+						margin: 10px
+						background-color: #ffffff
+						box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+						.section-33p_image
+							margin-bottom: 15px
+						.section-33p_text
+							text-align: center
+							display: block
+							width: 100%
+	.main-section-news
+		background-color: #fafafa
+		height: 353px
+		width: 100%
+		display: flex
+		order: 4
+		margin-top: 31px
+		margin-bottom: 121px
+		.section-news
+			display: flex
+			flex-direction: column
+			max-width: 1024px
+			width: 100%
+			margin: auto
+			height: 353px
+			// justify-content: space-between
+			position: relative
+			padding-bottom: 0px
+			padding-top: 73px
+			.section-news_name
+				width: 261px
+				height: 60px
+				background-color: #e6e6e6
+				display: flex
+				align-items: center
+				font-size: 20px
+				font-weight: bold
+				padding-left: 30px
+				font-style: normal
+				font-stretch: normal
+				line-height: normal
+				letter-spacing: normal
+				text-align: center
+				color: #a1a1a1
+				position: absolute
+				top: -31px
+			.section-news_content
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: unset
+				.section-news_item
+					width: 250px
+					height: 308px
+					margin-right: 20px
+					display: flex
+					flex-direction: column
+					position: relative
+					transition: 300ms ease
+					&:last-child
+						margin-right: 0
+					&:hover
+						cursor: pointer
+						transform: scale(1.05)
+					.section-news_image
+						width: 100%
+						height: 200px
+					.section-news_text
+						// width: 100%
+						height: 108px
+						display: flex
+						justify-content: flex-start
+						align-items: center
+						background: #cce0ef
+						font-size: 14px
+						font-weight: 600
+						font-style: normal
+						font-stretch: normal
+						line-height: normal
+						letter-spacing: normal
+						text-align: left
+						color: #505050
+						padding: 11px
+						padding-left: 20px
+					.section-news_date
+						position: absolute
+						left: 10px
+						bottom: 98px
+						width: 88px
+						height: 20px
+						display: flex
+						justify-content: center
+						align-items: center
+						font-size: 12px
+						color: #ffffff
+						text-align: center
+						background: #0066b3
+	.footer
+		width: 100%
+		border-top: 1px solid #0066b3
+		display: flex
+		order: 6
+		margin-top: 20px
+		flex-direction: column
+		.footer_wrapper
+			max-width: 1024px
+			padding: 0 15px
+			width: calc(100% + -30px)
+			height: auto
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			margin: 14px auto 10px auto
+			// flex-direction: column
+			.footer_menu
+				display: flex
+				flex-direction: column
+				justify-content: flex-start
+				align-items: flex-start
+				font-size: 12px
+				.footer_menu_title
+					font-weight: bold
+					color: #4a4a4a
+					line-height: 1.67
+				.footer_menu_item
+					color: #6c6c6c
+					font-weight: normal
+					line-height: 1.67
+					text-align: left
+					text-decoration: none
+			.footer_prod
+				display: flex
+				flex-direction: column
+				justify-content: flex-start
+				align-items: flex-start
+				font-size: 12px
+				.footer_prod_title
+					font-weight: bold
+					color: #4a4a4a
+					line-height: 1.67
+				.footer_prod_item
+					color: #6c6c6c
+					font-weight: normal
+					line-height: 1.67
+					text-align: left
+					text-decoration: none
+			.footer_faq
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				align-items: flex-start
+				font-size: 12px
+				.footer_faq_title
+					font-weight: bold
+					color: #4a4a4a
+					line-height: 1.67
+				.footer_faq_callback
+					display: flex
+					flex-direction: column
+					.footer_faq_callback_title
+						font-weight: normal
+						color: black
+					.footer_faq_callback_number
+						color: #0066b3
+						text-decoration: none
+						color: #0066b3
+						&:hover
+							cursor: pointer
+			.footer_sotial
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				align-items: flex-end
+				.footer_sotial_title 
+					margin-bottom: 0
+					& a
+					margin-right: 0px
+					transition: 200ms ease
+					&:last-child
+						margin-right: 0
+					&:hover
+						cursor: pointer
+				.footer_sotial_app
+					display: flex
+					flex-direction: column
+					&:hover
+						cursor: pointer
+		.footer_rights
+			max-width: 1024px
+			padding: 0 15px
+			width: calc(100% + -30px)
+			height: auto
+			display: flex
+			justify-content: space-between
+			margin: 14px auto 50px auto
+			font-size: 12px
+@media only screen and (min-width : 991px)
+	.field
+		background-size: cover
+		height: 643px
+		background-repeat: no-repeat
+		background-position: center center
+
+	.slide1z
+		background-image: url("../img/field1.jpg")
+	.slide2z
+		background-image: url("../img/field2.jpg")
+	.slide3z
+		background-image: url("../img/field3.jpg")
+	.slide4z
+		background-image: url("../img/field4.jpg")
+	.slidetitle
+		img
+			width: 100%
+	.mobile
+		display: none
+	.wrapper-full
+		width: 100%
+		height: 100%
+		display: block
+		padding: 0
+		margin: 0
+		border: 0
+		.content
+			// max-width: 1024px
+			height: 100%
+			// padding: 0 15px 
+			display: block
+			margin: auto
+			position: relative
+			.content_topbar
+				display: flex
+				position: fixed
+				top: 0
+				left: 0
+				// padding: 0 15px 
+				height: 152px
+				width: 100%
+				padding-top: 25px
+				z-index: 100000
+				flex-direction: column
+				background-color: rgba(255,255,255,0.8)
+				.wrapper_header
+					max-width: 1024px
+					width: calc(100% + -30px)
+					display: block
+					margin: auto
+					padding: 0 15px
+					.content_topbar_top
+						display: flex
+						flex-direction: row
+						justify-content: space-between
+						.content_topbar_leftside
+							display: flex
+							flex-direction: row
+							align-items: flex-end
+							height: 50px
+							padding-bottom: 25px
+							.logo_header
+								width: 188px
+								height: 50px	
+							.content_topbar_leftside_callback
+								display: flex
+								flex-direction: column
+								justify-content: flex-start
+								align-items: flex-start
+								margin-left: 42px
+								.content_topbar_leftside_callback_text
+									font-size: 14px
+									text-align: left
+									color: black
+								.content_topbar_leftside_callback_number
+									font-size: 16px
+									text-align: left
+									color: #0066b3
+						.content_topbar_rightside
+							display: flex
+							flex-direction: row
+							align-items: flex-end
+							height: 50px
+							.content_topbar_rightside_info
+								display: flex
+								margin-right: 55px
+								span
+									border-bottom: 1px solid #0066b3
+									margin-left: 30px
+									color: #505050
+									font-size: 14px
+									text-align: center
+									padding-bottom: 3px
+									line-height: 1.57
+									font-weight: 600
+									// padding: 5px
+									transition: 300ms ease
+									&:first-child
+										margin-left: 0
+									&:hover
+										cursor: pointer
+										border-bottom: 1px solid #1f9339
+
+							.content_topbar_rightside_lang_search
+								display: flex
+								align-items: flex-end
+								.content_topbar_rightside_lang_search_select
+									position: relative
+									margin-right: 26px
+									display: block
+									.select_lang 
+										border: solid 1px #0066b3
+										font-size: 13px
+										width: 67px
+										height: 30px
+										padding-left: 12px
+										background: white
+										appearance: none
+										-moz-appearance: none
+										-webkit-appearance: none
+										text-align: center
+										&:focus 
+											outline: none
+											box-shadow: none
+											border: solid 1px grey
+										option
+											height: 30px
+
+									.select-side
+										position: absolute
+										top: 1px
+										right: 8px
+								.dash_search
+									width: 35px
+									height: 30px
+									background: white
+									border: none
+									position: relative
+									transition: 300ms ease
+									overflow: hidden
+									display: block
+									&:hover
+										cursor: pointer	
+										width: 200px
+									.dash_search_input
+										height: 27px
+										border: 1px solid #d2d2d2
+										width: calc(100% + -40px)
+										padding-left: 5px
+										line-height: 30px
+										font-size: 14px
+										margin: 0
+										padding-top: 0
+										// border: none
+										overflow: hidden
+										position: absolute
+										right: 35px
+										left: 0
+									.search
+										position: absolute
+										right: 0
+										top: 0
+										width: 35px
+										height: 30px
+										background: none
+										border: 0
+										z-index: 123123
+										background-color: #0066b3
+										&:hover
+											cursor: pointer
+										.search_icon
+											line-height: 30px
+											width: 15px
+											height: 30px
+					.main_navigation_content_topbar
+						height: 77px
+						width: 100%
+						display: flex
+						flex-direction: row
+						text-align: center
+						.navbar
+							display: flex
+							flex-direction: row
+							justify-content: center
+							align-items: center
+							width: 100%
+							> *
+								width: calc(100% / 7)
+	.section-products
+		order: 2
+		display: flex
+		padding-bottom: 80px
+		padding-top: 80px
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		.section-products_item
+			width: 181px
+			height: 181px
+			padding: 30px
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			flex-direction: column
+			margin: 10px
+			background-color: #ffffff
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+			.section-products_image
+				margin-bottom: 27px
+			.section-products_text
+				text-align: center
+				display: block
+				width: 100%
+	.main-section-seeds
+		background-color: #fafafa
+		height: auto
+		// width: 100%
+		width: calc(100% + -30px)
+		display: flex
+		order: 3
+		margin-top: 31px
+		margin-bottom: 31px
+		
+		.section-seeds
+			display: flex
+			flex-direction: row
+			max-width: 1024px
+			width: 100%
+			margin: auto
+
+			height: 377px
+			justify-content: space-between
+			position: relative
+			padding-bottom: 0px
+			.section-seeds_leftside
+				width: 100%
+				padding-right: 85px
+				.section-seeds_leftside_text
+					display: flex
+					flex-direction: column
+					font-size: 16px
+					font-weight: normal
+					font-style: normal
+					font-stretch: normal
+					line-height: 1.5
+					letter-spacing: normal
+					text-align: left
+					color: #505050
+					padding-bottom: 37px
+				.section-seeds_leftside_name
+					width: 261px
+					height: 60px
+					background-color: #e6e6e6
+					display: flex
+					align-items: center
+					font-size: 20px
+					font-weight: bold
+					padding-left: 30px
+					font-style: normal
+					font-stretch: normal
+					line-height: normal
+					letter-spacing: normal
+					text-align: center
+					color: #a1a1a1
+					position: relative
+					top: -31px
+				.section-seeds_leftside_link
+					width: 173px
+					height: 40px
+					background-color: #0066b3
+					font-size: 14px
+					font-weight: 400
+					display: flex
+					justify-content: center
+					align-items: center
+					text-decoration: none
+
+					font-style: normal
+					font-stretch: normal
+					line-height: normal
+					letter-spacing: normal
+					text-align: center
+					color: #ffffff
+			.section-seeds_rightside
+				display: block
+				.section-seeds_rightside_image
+					position: relative
+					top: -31px
+					.seeds_rightside_image_sunflower
+					.seeds_rightside_image_seeds
+						position: absolute
+						left: -70px
+						bottom: -70px
+	.main-section_33p
+		height: auto
+		// width: 100%
+		width: calc(100% + -30px)
+		display: flex
+		order: 4
+
+		margin-top: 31px
+		margin-bottom: 31px
+		.section-33p
+			position: relative
+			display: flex
+			flex-direction: column
+			height: 361px
+			width: 100%
+			max-width: 1024px
+			margin: 30px auto
+			.section-33p_name
+				width: 261px
+				height: 60px
+				background-color: #e6e6e6
+				display: flex
+				align-items: center
+				font-size: 20px
+				font-weight: bold
+				padding-left: 30px
+				font-style: normal
+				font-stretch: normal
+				line-height: normal
+				letter-spacing: normal
+				text-align: center
+				color: #a1a1a1
+				position: relative
+				top: -31px
+			.section-33p_content
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				.section-33p_item
+					width: 181px
+					height: 181px
+					padding: 30px
+					display: flex
+					justify-content: flex-start
+					align-items: center
+					flex-direction: column
+					margin: 10px
+					background-color: #ffffff
+					box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+					.section-33p_image
+						margin-bottom: 37px
+					.section-33p_text
+						text-align: center
+						display: block
+						width: 100%
+	.main-section-news
+		background-color: #fafafa
+		height: 353px
+		width: 100%
+		display: flex
+		order: 4
+		margin-top: 31px
+		margin-bottom: 121px
+		.section-news
+			display: flex
+			flex-direction: column
+			max-width: 1024px
+			width: 100%
+			margin: auto
+			height: 353px
+			// justify-content: space-between
+			position: relative
+			padding-bottom: 0px
+			padding-top: 73px
+			.section-news_name
+				width: 261px
+				height: 60px
+				background-color: #e6e6e6
+				display: flex
+				align-items: center
+				font-size: 20px
+				font-weight: bold
+				padding-left: 30px
+				font-style: normal
+				font-stretch: normal
+				line-height: normal
+				letter-spacing: normal
+				text-align: center
+				color: #a1a1a1
+				position: absolute
+				top: -31px
+			.section-news_content
+				display: flex
+				flex-direction: row
+				justify-content: unset
+				align-items: unset
+				.section-news_item
+					width: 328px
+					height: 388px
+					margin-right: 20px
+					display: flex
+					flex-direction: column
+					position: relative
+					transition: 300ms ease
+					&:last-child
+						margin-right: 0
+					&:hover
+						cursor: pointer
+						transform: scale(1.05)
+					.section-news_image
+						width: 100%
+						height: 280px
+					.section-news_text
+						// width: 100%
+						height: 108px
+						display: flex
+						justify-content: flex-start
+						align-items: center
+						background: #cce0ef
+						font-size: 20px
+						font-weight: 600
+						font-style: normal
+						font-stretch: normal
+						line-height: normal
+						letter-spacing: normal
+						text-align: left
+						color: #505050
+						padding: 11px
+						padding-left: 20px
+					.section-news_date
+						position: absolute
+						left: 10px
+						bottom: 98px
+						width: 88px
+						height: 20px
+						display: flex
+						justify-content: center
+						align-items: center
+						font-size: 12px
+						color: #ffffff
+						text-align: center
+						background: #0066b3
+	.footer
+		width: 100%
+		border-top: 1px solid #0066b3
+		display: flex
+		order: 6
+		margin-top: 120px
+		flex-direction: column
+		.footer_wrapper
+			max-width: 1024px
+			padding: 0 15px
+			width: 100%
+			height: auto
+			display: flex
+			justify-content: space-between
+			margin: 14px auto 10px auto
+			// flex-direction: column
+			.footer_menu
+				display: flex
+				flex-direction: column
+				justify-content: flex-start
+				align-items: flex-start
+				font-size: 12px
+				.footer_menu_title
+					font-weight: bold
+					color: #4a4a4a
+					line-height: 1.67
+				.footer_menu_item
+					color: #6c6c6c
+					font-weight: normal
+					line-height: 1.67
+					text-align: left
+					text-decoration: none
+			.footer_prod
+				display: flex
+				flex-direction: column
+				justify-content: flex-start
+				align-items: flex-start
+				font-size: 12px
+				.footer_prod_title
+					font-weight: bold
+					color: #4a4a4a
+					line-height: 1.67
+				.footer_prod_item
+					color: #6c6c6c
+					font-weight: normal
+					line-height: 1.67
+					text-align: left
+					text-decoration: none
+			.footer_faq
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				align-items: flex-start
+				font-size: 12px
+				.footer_faq_title
+					font-weight: bold
+					color: #4a4a4a
+					line-height: 1.67
+				.footer_faq_callback
+					display: flex
+					flex-direction: column
+					.footer_faq_callback_title
+						font-weight: normal
+						color: black
+					.footer_faq_callback_number
+						color: #0066b3
+						text-decoration: none
+						color: #0066b3
+						&:hover
+							cursor: pointer
+			.footer_sotial
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				align-items: flex-end
+				.footer_sotial_title > a
+					margin-right: 13px
+					transition: 200ms ease
+					&:last-child
+						margin-right: 0
+					&:hover
+						cursor: pointer
+				.footer_sotial_app
+					display: flex
+					flex-direction: column
+					&:hover
+						cursor: pointer
+		.footer_rights
+			max-width: 1024px
+			padding: 0 15px
+			width: 100%
+			height: auto
+			display: flex
+			justify-content: space-between
+			margin: 14px auto 50px auto
+			font-size: 12px
