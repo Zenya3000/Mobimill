@@ -13,7 +13,10 @@ $(function() {
 		}
 	})
 
-
+	$('#sliderz .slider').prrpleSlider({
+		transition: 'fade',
+		loop: true
+	});
 	
 
 });
